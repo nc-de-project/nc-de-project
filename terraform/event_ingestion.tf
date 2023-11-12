@@ -19,3 +19,4 @@ resource "aws_lambda_permission" "allow_scheduler" {
   principal      = "events.amazonaws.com"
   source_arn     = aws_cloudwatch_event_rule.event_bridge_invoke_ingestion_lambda_rule.arn
 }
+
