@@ -36,7 +36,7 @@ def lambda_handler(event, context):
 
     table_name = get_table_name(event)
     data = read_s3_json(event)
-    print('>>>>>>>>>>>>>>>>>>>>>',event['Records'])
+    print('>>>>>>>>>>>>>>>>>>>>>', event['Records'])
     try:
         transformed_data = None
         OLAP_table_name = None
