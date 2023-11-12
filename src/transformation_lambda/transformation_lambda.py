@@ -33,7 +33,7 @@ def lambda_handler(event, context):
         If there is an error during the processing of the event.
     """
     # bucket_name = "nc-de-project-transformed-data-20231102173127140100000001"
-    bucket_name=os.environ['TRANS_BUCKET']
+    bucket_name = os.environ['TRANS_BUCKET']
     table_name = get_table_name(event)
     data = read_s3_json(event)
     # print('>>>>>>>>>>>>>>>>>>>>>', event)
